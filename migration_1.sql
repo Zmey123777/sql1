@@ -3,12 +3,10 @@ CREATE TABLE genres (
     name VARCHAR(255) NOT NULL
 );
 
-
 CREATE TABLE artists (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL
 );
-
 
 CREATE TABLE albums (
     id SERIAL PRIMARY KEY,
@@ -21,7 +19,6 @@ CREATE TABLE tracks (
     album_id INT REFERENCES albums(id),
     title VARCHAR(255) NOT NULL,
     duration REAL
-
 );
 
 CREATE TABLE collection (
