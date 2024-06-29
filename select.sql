@@ -63,4 +63,4 @@ JOIN tracks t ON ct.track_id = t.id
 JOIN albums a ON t.album_id = a.id
 JOIN artist_album aa ON a.id = aa.album_id
 JOIN artists ar ON aa.artist_id = ar.id
-WHERE ar.name = 'ArtistOne';
+WHERE ar.name = 'Паша Техник';
